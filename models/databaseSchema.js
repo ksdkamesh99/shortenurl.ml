@@ -2,10 +2,11 @@ const mongoose=require('mongoose');
 
 const shortid= require('shortid');
 
-const databaseSchema=mongoose.Schema({
+const databaseSchema=new mongoose.Schema({
     long:{
         type: String,
-        required:true
+        required:true,
+        trim:true
     },
     short: {
         type: String,
