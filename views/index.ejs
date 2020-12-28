@@ -36,11 +36,13 @@
         </tr>
         </thead>
         <tbody>
+            <% result.forEach(shurl=>{ %>
         <tr>
-            <td>https://saidurgakameshkota.tech</td>
-            <td>https://hs.te/q2e4</td>
-            <td>98</td>
+            <td><%= shurl.long %></td>
+            <td><%= shurl.short %></td>
+            <td><%= shurl.clicks %></td>
         </tr>
+        <% }) %>
         </tbody>
     </table>
 
