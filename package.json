@@ -1,0 +1,24 @@
+{
+  "name": "url-shortner",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000S\u0000t\u0000u\u0000r\u0000d\u0000y\u0000U\u0000R\u0000L\u0000-\u0000S\u0000h\u0000o\u0000r\u0000t\u0000n\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksdkamesh99/SturdyURL-Shortner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksdkamesh99/SturdyURL-Shortner/issues"
+  },
+  "homepage": "https://github.com/ksdkamesh99/SturdyURL-Shortner#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
+  }
+}
