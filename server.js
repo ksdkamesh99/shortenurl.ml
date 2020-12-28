@@ -17,8 +17,9 @@ mongoose.connect('mongodb+srv://user:tngzF5jkyoobC66d@cluster0.4qtzn.mongodb.net
 
 app.set('view engine','ejs');
 
-app.get('/',(req,res)=>{
-    res.render('index')
+app.get('/',async (req,res)=>{
+    const result= await shortenUrl.find();
+    res.render('index',{result:result});
 });
 
 
@@ -26,7 +27,7 @@ app.get('/',(req,res)=>{
 app.post('/shortenurl',async (req,res)=>{
     const url=req.body.long;
     await shortenUrl.create({long:req.body.long});
-    res.render('index');
+    res.redirect('/');
 
 });
 
@@ -46,5 +47,8 @@ app.get('/:shorturl',async (req,res)=>{
     res.redirect(urllg);
         
 });
+
+
+
 
 app.listen(5000);
