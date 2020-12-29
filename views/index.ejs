@@ -31,11 +31,11 @@
     <input type="submit" value="Shorten" class="btn-success center">
     </form>
     <h2>Your Created Urls</h2>
-    <div class="table-responsive">
+    <div class="container-fluid">
 
     <table class="table table-striped">
         <thead>
-        <tr>
+        <tr class="d-flex">
             <th >Long URL</th>
             <th>Short URL</th>
             <th>No of Clicks</th>
@@ -43,7 +43,7 @@
         </thead>
         <tbody>
             <% result.forEach(shurl=>{ %>
-        <tr>
+        <tr class="d-flex">
             <td><a href="<%= shurl.long %>" target="_blank"><%= shurl.long %></a></td>
             <td><a href="/<%= shurl.short %>" target="_blank"><%= shurl.short %></a></td>
             <td><%= shurl.clicks %></td>
