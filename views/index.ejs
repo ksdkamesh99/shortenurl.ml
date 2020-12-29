@@ -25,9 +25,9 @@
         <h1>SturdyURL-Shortner</h1>
 
 
-    <form action="/shortenurl" method="POST" class="form-inline">
+    <form action="/shortenurl" method="POST" class="form-inline my-4">
 
-    <input type="text" name="long" placeholder="Enter Long URL" class="form-control">
+    <input type="text" name="long" placeholder="Enter Long URL" class="form-control col mr-2">
     <input type="submit" value="Shorten" class="btn-success center">
     </form>
     <h2>Your Created Urls</h2>
@@ -44,8 +44,8 @@
         <tbody>
             <% result.forEach(shurl=>{ %>
         <tr>
-            <td><%= shurl.long %></td>
-            <td><%= shurl.short %></td>
+            <td><a href="<%= shurl.long %>" target="_blank"><%= shurl.long %></a></td>
+            <td><a href="/<%= shurl.short %>" target="_blank"><%= shurl.short %></a></td>
             <td><%= shurl.clicks %></td>
         </tr>
         <% }) %>
